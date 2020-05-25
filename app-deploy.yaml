@@ -5,13 +5,20 @@ metadata:
     architecture: x86_64
     authoritative-source-url: registry.access.redhat.com
     build-date: 2020-03-31T14:54:13.907559
+    commit.image.appsody.dev/contextDir: C:\Workspace\Appsody\sample-springboot-appsody
+    commit.image.appsody.dev/date: Mon May 25 17:08:19 2020 +0530
+    commit.image.appsody.dev/message: Updated
     commit.stack.appsody.dev/contextDir: /incubator/java-spring-boot2
     commit.stack.appsody.dev/date: Thu May 14 09:37:35 2020 +0100
     commit.stack.appsody.dev/message: 'Merge pull request #340 from groeges/release-0.9-codewind'
     description: This image is the Kabanero development container for the java-spring-boot2
       stack
     distribution-scope: public
-    image.opencontainers.org/created: "2020-05-25T16:02:10+05:30"
+    image.opencontainers.org/created: "2020-05-25T17:13:57+05:30"
+    image.opencontainers.org/documentation: https://github.com/dipakpal/sample-springboot-appsody
+    image.opencontainers.org/revision: 0dbda09707fc10060765037db8d7d11ac59e93d7
+    image.opencontainers.org/source: https://github.com/dipakpal/sample-springboot-appsody/tree/master
+    image.opencontainers.org/url: https://github.com/dipakpal/sample-springboot-appsody
     k8s.io/description: The Universal Base Image is designed and engineered to be
       the base layer for all of your containerized applications, middleware and utilities.
       This base image is freely redistributable, but Red Hat only supports Red Hat
@@ -51,10 +58,11 @@ metadata:
     stack.appsody.dev/id: java-spring-boot2
     stack.appsody.dev/version: 0.3.29
   name: sample-springboot-appsody
+  namespace: trekadvisor
 spec:
-  applicationImage: dev.local/sample-springboot-appsody
+  applicationImage: docker.io/dipakpal/sample-springboot-appsody
   createKnativeService: false
-  expose: true
+  expose: false
   livenessProbe:
     failureThreshold: 12
     httpGet:
