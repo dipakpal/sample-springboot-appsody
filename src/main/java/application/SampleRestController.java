@@ -12,7 +12,7 @@ public class SampleRestController {
 	
 	@GetMapping
 	public String getHello( ) {
-		return "Hello Spring-Boot!!!";
+		return "Hello OpenShift Spring-Boot!!!";
 	}
 
 }
